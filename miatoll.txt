@@ -1,42 +1,19 @@
-Spectrum Kernel | Molecule | 720G (AOSP R/S, MIUI R/S)
+Spectrum Kernel | Fluid | 720G (AOSP R/S)
 
-• Upstream to 4.14.275 (AOSP/MIUI)
-• treewide: Merge tag 'LA.UM.9.1.r1-11800-SMxxx0.0' (AOSP/MIUI)
-• qcacld-3.0: Merge tag 'LA.UM.9.1.r1-11800-SMxxx0.0' (AOSP/MIUI) 
-• fw-api: Merge tag 'LA.UM.9.1.r1-11800-SMxxx0.0' (AOSP/MIUI)
-• qca-wifi-host-cmn: Merge tag 'LA.UM.9.1.r1-11800-SMxxx0.0' (AOSP/MIUI)
-• audio-kernel: Merge tag 'LA.UM.9.1.r1-11800-SMxxx0.0' (AOSP/MIUI)
-• Revert "arm64: ssbd: Skip apply_ssbd if not using dynamic mitigation" (AOSP/MIUI)
-• Revert "power/supply: qg-soc: Don't drop SOC if still charging" (AOSP/MIUI)
-• arm64: Add missing arm64_update_smccc_conduit (AOSP/MIUI)
-• arm64: ssbd: Skip apply_ssbd if not using dynamic mitigation (AOSP/MIUI)
-• blkdev: Do not perform IO stats (AOSP/MIUI)
-• char: mem: Reroute random fops to urandom (AOSP/MIUI)
-• char: mem: link /dev/{u}random to /dev/srandom (AOSP/MIUI)
-• char: mem: register /dev/hw_random through devmem framework when HW_RANDOM is unset (AOSP/MIUI)
-• char: srandom: Avoid printk logging in srandom (AOSP/MIUI)
-• char: srandom: Expose sdevice_{read,write} and sfops for external usage (AOSP/MIUI)
-• char: srandom: Fix comparison ordering warning (AOSP/MIUI)
-• char: srandom: Refactor for sanity and consistency (AOSP/MIUI)
-• char: srandom: change TIMESPEC struct variable to tsp (AOSP/MIUI)
-• char: srandom: disable logging for production (AOSP/MIUI)
-• char: srandom: expose new Makefile and Kconfig interfaces (AOSP/MIUI)
-• char: srandom: switch to kzalloc (AOSP/MIUI)
-• char: srandom: use ktime_get_real_ts64 and timespec64 (AOSP/MIUI)
-• cust_defconfig: Set CONFIG_SRANDOM to y (AOSP/MIUI)
-• drivers: char: Import srandom (AOSP/MIUI)
-• drivers: devfreq: drop kgsl_devfreq_add_notifier function (AOSP/MIUI)
-• drivers: srandom: Fix derp in Kconfig (AOSP/MIUI)
-• gpu: adreno: adrenoboost: add new mode [4] for more better GPU performance (AOSP/MIUI)
-• gpu: devfreq: adrenoboost v2.1: adrenoboost lvl 3 settings cut low freq bump (AOSP/MIUI)
-• gpu: devfreq: adrenoboost: adding conservative governor (AOSP/MIUI)
-• gpu: devfreq: adrenoboost: adding conservative governor v2 (AOSP/MIUI)
-• gpu: devfreq: adrenoboost: correct leveling errors (AOSP/MIUI)
-• kernel: use power efficient workingqueues (AOSP/MIUI)
-• mm: Always overcommit memory by default (AOSP/MIUI)
-• mm: Reduce VM_MAX_READAHEAD to 128KB and apply init protection (AOSP/MIUI)
-• mm: vmscan: Set vm_swappiness at 100 (AOSP/MIUI)
-• workqueue: Affine unbound workqueues to little CPUs by default (AOSP/MIUI)
-• workqueue: Respect isolated CPUs when queueing an unbound work (AOSP/MIUI)
-• Revert "drivers/power: Checkout from https://github.com/Demon000/kernel_xiaomi_sm6250" (AOSP)
+• Upstream to 4.14.280 (AOSP)
+• treewide: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
+• qcacld-3.0: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP) 
+• fw-api: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
+• qca-wifi-host-cmn: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
+• cpufreq: Don't WARN_ON on non-existent cpu
+• devfreq: Avoid competing with low-priority tasks
+• mm: Micro-optimize PID map reads for arm64
+• msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input
+• power: wakelock: Add a timeout to wakelocks globally
+• revert: Partially revert Molecule release
+• sched: Do not always skip yielding tasks
+• sched: Queue non-local tasks on a cache sharing CPU
+• usb: f_gsi: Do not default to rndis over ethernet for unknown ids
 
+Notes:
+ - MIUI Release will be skipped this time.
