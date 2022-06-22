@@ -1,19 +1,65 @@
-Spectrum Kernel | Fluid | 720G (AOSP R/S)
+Spectrum Kernel | Biophysics | 720G (AOSP R/S, MIUI R/S)
 
-• Upstream to 4.14.280 (AOSP)
-• treewide: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
-• qcacld-3.0: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP) 
-• fw-api: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
-• qca-wifi-host-cmn: Merge tag 'LA.UM.9.1.r1-11900-SMxxx0.0' (AOSP)
-• cpufreq: Don't WARN_ON on non-existent cpu
-• devfreq: Avoid competing with low-priority tasks
-• mm: Micro-optimize PID map reads for arm64
-• msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input
-• power: wakelock: Add a timeout to wakelocks globally
-• revert: Partially revert Molecule release
-• sched: Do not always skip yielding tasks
-• sched: Queue non-local tasks on a cache sharing CPU
-• usb: f_gsi: Do not default to rndis over ethernet for unknown ids
+• Upstream to 4.14.284 (AOSP/MIUI)
+• treewide: Merge tag 'LA.UM.9.1.1.r1-02300-RENNELL.QSSI12.0' (AOSP/MIUI)
+• fw-api: Merge tag 'LA.UM.9.1.1.r1-02300-RENNELL.QSSI12.0' (AOSP/MIUI)
+• qca-wifi-host-cmn: Merge tag 'LA.UM.9.1.1.r1-02300-RENNELL.QSSI12.0' (AOSP/MIUI)
+• ARM64/dts: atoll: Scale SSOC with BSOS (AOSP/MIUI• )
+• BACKPORT: binder: don't unlock procs while scanni• ng contexts (AOSP/MIUI)
+• BACKPORT: binder: freeze multiple contexts (AOSP/• MIUI)
+• BACKPORT: binder: implement BINDER_FREEZE ioctl (AOSP/MIUI)
+• BACKPORT: binder: introduce the BINDER_GET_FROZEN_INFO ioctl (AOSP/MIUI)
+• BACKPORT: binder: remove redundant assignment to pointer n (AOSP/MIUI)
+• BACKPORT: binder: use EINTR for interrupted wait for work (AOSP/MIUI)
+• FROMGIT: binder: fix test regression due to sender_euid change (AOSP/MIUI)
+• FROMGIT: binder: print warnings when detecting oneway spamming (AOSP/MIUI)
+• UPSTREAM: binder: add flag to clear buffer on txn complete (AOSP/MIUI)
+• UPSTREAM: binder: use euid from cred instead of using task (AOSP/MIUI)
+• UPSTREAM: binder: use euid from cred instead of using task (AOSP/MIUI)
+• binder: Don't stub out binder_user_error (AOSP/MIUI)
+• binder: Fix log spam caused by interrupted waits (AOSP/MIUI)
+• binder: Fix the missing BR_FROZEN_REPLY in binder_return_strings (AOSP/MIUI)
+• binder: No outgoing transaction when thread todo has transaction (AOSP/MIUI)
+• binder: Rate-limit debug and userspace triggered err msgs (AOSP/MIUI)
+• binder: Reserve caches for small, high-frequency memory allocations (AOSP/MIUI)
+• binder: Return EFAULT if we fail BINDER_ENABLE_ONEWAY_SPAM_DETECTION (AOSP/MIUI)
+• binder: Stub out debug prints by default (AOSP/MIUI)
+• binder: Tell userspace to dump current backtrace when detected oneway spamming (AOSP/MIUI)
+• binder: set binder_debug_mask=0 to suppress logging (AOSP/MIUI)
+• binder: use atomic_inc for atomic variable incrementation (AOSP/MIUI)
+• binder_alloc: Avoid page memory allocation in high memory (AOSP/MIUI)
+• Revert "drivers: thermal: Don't qualify thermal polling as high priority" (AOSP/MIUI)
+• Revert "drm/msm: dsi: Toggle wled cabc along with display cabc" (AOSP/MIUI)
+• Revert "drm: msm: dsi-staging: Add support for High Brightness Mode" (AOSP/MIUI)
+• Revert "dsm/msm: dsi-staging: Add support for CABC mode" (AOSP/MIUI)
+• Revert "power: smb-lib: Force suspend when cable out" (AOSP/MIUI)
+• cpuidle: lpm-levels: Only cancel the bias timer when it's used (AOSP/MIUI)
+• cpuidle: lpm-levels: Optimize and make way for upstream changes (AOSP/MIUI)
+• cpuidle: lpm-levels: get bias time from scheduler (AOSP/MIUI)
+• power: qpnp-qg: Add charge_raw sysfs node (AOSP/MIUI)
+• power: smb5-lib: Fix race conditions for typec power role (AOSP/MIUI)
+• power: smb5: Remove duplicate POWER_SUPPLY_PROP_CHARGE_FULL_DESIGN (AOSP/MIUI)
+• power: smb5: Report effective ICL value for current max (AOSP/MIUI)
+• power: smb5: Rerun APSD to ensure proper charger detection (AOSP/MIUI)
+• power: supply: Classify Battery Monitor Systems as batteries (AOSP/MIUI)
+• power: qpnp-smb5: Silence dmesg spam while charging (AOSP/MIUI)
+• thermal: Added VIRT_COUNT_THRESHOLD to virtual sensor (AOSP/MIUI)
+• thermal: Increase thermal trip points to 16 (AOSP/MIUI)
+• thermal: Return zero on success for qmi_tmd_send_state_request (AOSP/MIUI)
+• thermal: Skip thermal sensor update if emul temp set (AOSP/MIUI)
+• thermal: adc-tm: Implement emul_temp function (AOSP/MIUI)
+• thermal: step_wise: Clear mitigation on reaching clear threshold (AOSP/MIUI)
+• thermal: step_wise: Handle the temperature stable trend (AOSP/MIUI)
+• thermal: step_wise: Optimize mitigation evaluation (AOSP/MIUI)
+• arch_topology: Wire up thermal limit for arch_scale_max_freq_capacity (AOSP/MIUI)
+• blkdev: Do not perform IO stats (AOSP/MIUI)
+• blkdev: switch to SSD mode, disable IO stats and entropy gathering (AOSP/MIUI)
+• extcon: Allocate blocking_notifier_head after registering the device (AOSP/MIUI)
+• msm: vidc: disabled all debugging (AOSP/MIUI)
+• techpack: audio: Optimize audio codec (AOSP/MIUI)
+• drivers: power: Apply xiaomi changes (MIUI)
 
 Notes:
- - MIUI Release will be skipped this time.
+ - MIUI Release is at BETA Stage
+   So some functions won't work.
+   For example: Reading mode
